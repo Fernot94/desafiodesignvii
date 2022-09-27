@@ -23,16 +23,57 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-
 }
-
-.buttons {
-  border-color: black;
-  background-color: rgb(33, 221, 162)
-}
-
-
 
 .App-link {
   color: #61dafb;
 }
+
+
+
+button {
+  border: 2px solid #21dda2;
+  background-color: #21dda2;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: .75rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-spacing: 2px;
+}
+
+button:hover {
+  background-color: #F0EFF4;
+  color: #21dda2;
+}
+
+.header {
+  background-color: #8447ff;
+}
+
+.header button:hover {
+  background-color: #8447ff;
+}
+
+.candidatos {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  border-width: 5px;
+  border: solid black;
+  gap: 5px;
+
+}
+
+.divCandidatos {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+
+.titulo {}
