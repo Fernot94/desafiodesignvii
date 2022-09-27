@@ -28,3 +28,35 @@
 .App-link {
   color: #61dafb;
 }
+
+*{
+  background-color: #F0EFF4
+}
+
+button{
+  border: 2px solid #21dda2;
+  background-color: #21dda2;
+  color: #3E02B8;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: .75rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-spacing: 2px;
+}
+
+button:hover{
+  background-color: #F0EFF4;
+  color: #21dda2;
+}
+
+.header{
+  background-color: #8447ff;
+}
+
+.header button:hover{
+  background-color: #8447ff;
+}
