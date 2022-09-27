@@ -14,13 +14,34 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <button className="candidaturas" onClick={() => setForm(!form)}>
+        <button
+          className="candidaturas"
+          onClick={() => {
+            setForm(!form);
+            setCand(false);
+            setPower(false);
+          }}
+        >
           Adicionar Candidato
         </button>
-        <button className="candidates" onClick={() => setCand(!cand)}>
+        <button
+          className="candidates"
+          onClick={() => {
+            setCand(!cand);
+            setForm(false);
+            setPower(false);
+          }}
+        >
           Candidatos
         </button>
-        <button className="powerups" onClick={() => setPower(!power)}>
+        <button
+          className="powerups"
+          onClick={() => {
+            setPower(!power);
+            setCand(false);
+            setForm(false);
+          }}
+        >
           Power Up's
         </button>
       </div>
