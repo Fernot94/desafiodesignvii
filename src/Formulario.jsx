@@ -27,7 +27,7 @@ export default function Formulario() {
           <input
             onChange={(ele) => setIdade(ele.target.value)}
             value={idade}
-            type={"text"}
+            type={"date"}
           />
         </label>
         <br />

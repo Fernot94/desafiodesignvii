@@ -9,6 +9,7 @@ export default function Editar() {
   const [status, setStatus] = useState("Candidato");
   const [success, setSuccess] = useState(false);
   const [cancelar, setCancelar] = useState(false);
+
   return cancelar == false ? (
     <div>
       <form>
@@ -26,7 +27,7 @@ export default function Editar() {
           <input
             onChange={(ele) => setIdade(ele.target.value)}
             value={idade}
-            type={"text"}
+            type={"date"}
           />
         </label>
         <br />
@@ -59,11 +60,16 @@ export default function Editar() {
         <br />
         <label>
           Status:
-          <input
+          <select
             onChange={(ele) => setStatus(ele.target.value)}
             value={status}
-            type={"text"}
-          />
+            type={"select"}
+          >
+            <option value={status}>Candidato</option>
+            <option value={status}>Power Up # 1</option>
+            <option value={status}>Power Up # 2</option>
+            <option value={status}>Power Up # 3</option>
+          </select>
         </label>
         <br />
         <button onClick={() => setSuccess(!success)}>Salvar</button>
