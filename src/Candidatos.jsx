@@ -19,8 +19,8 @@ export default function Candidatos() {
           <h3 onClick={() => setVisualizar(!visualizar)}>Fernando Abreu</h3>
           <h3 onClick={() => setVisualizar(!visualizar)}>Daniel Pina</h3>
           <h3 onClick={() => setVisualizar(!visualizar)}>Ayrton Valério</h3>
-          <h3 onClick={() => setVisualizar(!visualizar)}>Sonia </h3>
-          <h3 onClick={() => setVisualizar(!visualizar)}>Miguel</h3>
+          <h3 onClick={() => setVisualizar(!visualizar)}>Sonia</h3>
+          <h3 onClick={() => setVisualizar(!visualizar)}>Miguel Silva</h3>
         </div>
       ) : (
         <Visualizar />
