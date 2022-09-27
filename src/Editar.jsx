@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Visualizar from "./Visualizar";
 export default function Editar() {
   const [nome, setNome] = useState("Daniel Pina");
   const [idade, setIdade] = useState("05/12/1997");
@@ -8,7 +8,8 @@ export default function Editar() {
   const [email, setEmail] = useState("pina@gmail.com");
   const [status, setStatus] = useState("Candidato");
   const [success, setSuccess] = useState(false);
-  return (
+  const [cancelar, setCancelar] = useState(false);
+  return cancelar == false ? (
     <div>
       <form>
         <label>
@@ -66,9 +67,11 @@ export default function Editar() {
         </label>
         <br />
         <button onClick={() => setSuccess(!success)}>Salvar</button>
-        <button onClick={() => setSuccess(!success)}>Cancelar</button>
+        <button onClick={() => setCancelar(!cancelar)}>Cancelar</button>
         {success == false ? "" : <h2>Candidato editado com sucesso!</h2>}
       </form>
     </div>
+  ) : (
+    <Visualizar />
   );
 }

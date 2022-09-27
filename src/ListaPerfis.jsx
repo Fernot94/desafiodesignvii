@@ -1,5 +1,6 @@
 import React from "react";
 import "./ListaPerfis-css.css"
+import "./pfp.png"
 
 export default function ListaPerfis() {
 
@@ -30,25 +31,55 @@ export default function ListaPerfis() {
                     . cada turma tem a capacidade máxima de 30 alunos, mas não é obrigatório estar cheia
                         ! tem de se contar quantos alunos tem a turma com a ajuda de um CONTADOR
                     . existe um limite de 3 turmas
-                    . são mostradas 5 pessoas por vez, quando se quiser ver outro perfis:
+                    . são mostradas 6 pessoas por linha, quando se quiser ver outro perfis:
                         ! carrega-se no botão e são mostrados novos perfis
                             #NOTA - podem ser mostrados menos de 5 perfis dependendo da quantidade de alunos numa turma
             */}
 
             {/* div do primeiro power up */}
 
-            <div>
-                <img></img>
-            </div>
-
-            {/* div do segundo power up */}
-            <div>
-                <img></img>
-            </div>
-
-            {/* div do terceiro power up */}
-            <div>
-                <img></img>
+            <div className="TurmaBootCamp">
+                {/* -------------------------------------------------------------------------------------- */}
+                <div>
+                    <img src={pfp} />
+                    <label for="nome">
+                        Nome:
+                    </label>
+                    <input type={"text"}></input>
+                </div>
+                {/* -------------------------------------------------------------------------------------- */}
+                <div>
+                    <img><src source="pfp.png"></src></img>
+                    <label for="dataDeNascimento">
+                        Data de Nascimento:
+                    </label>
+                    <input type={"date"}></input>
+                </div>
+                {/* -------------------------------------------------------------------------------------- */}
+                <div>
+                    <img><src source="pfp.png"></src></img>
+                    <label for="morada">
+                        Morada:
+                    </label>
+                    <input type={"text"}></input>
+                </div>
+                {/* -------------------------------------------------------------------------------------- */}
+                <div>
+                    <img><src source="pfp.png"></src></img>
+                    <label for="email">
+                        E-mail:
+                    </label>
+                    <input type={"text"}></input>
+                </div>
+                {/* -------------------------------------------------------------------------------------- */}
+                <div>
+                    <img><src source="pfp.png"></src></img>
+                    <label for="contacto">
+                        Contacto:
+                    </label>
+                    <input type={"text"}></input>
+                </div>
+                {/* -------------------------------------------------------------------------------------- */}
             </div>
 
         </div>
