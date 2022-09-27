@@ -5,7 +5,6 @@ import Formulario from "./Formulario";
 import Candidatos from "./Candidatos";
 import Editar from "./Editar";
 import Powerups from "./Powerups";
-import ListaPerfis from "./ListaPerfis";
 
 function App() {
   const [form, setForm] = useState(false);
