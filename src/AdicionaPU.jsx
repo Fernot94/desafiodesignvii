@@ -10,8 +10,8 @@ export default function AdicionaPU() {
           <h3 onClick={() => setAdicionar(!adicionar)}>Fernando Abreu</h3>
           <h3 onClick={() => setAdicionar(!adicionar)}>Daniel Pina</h3>
           <h3 onClick={() => setAdicionar(!adicionar)}>Ayrton Valério</h3>
-          <h3 onClick={() => setAdicionar(!adicionar)}>Sonia </h3>
-          <h3 onClick={() => setAdicionar(!adicionar)}>Miguel</h3>
+          <h3 onClick={() => setAdicionar(!adicionar)}>Sonia</h3>
+          <h3 onClick={() => setAdicionar(!adicionar)}>Miguel Silva</h3>
         </div>
       ) : (
         <Adicionado />
