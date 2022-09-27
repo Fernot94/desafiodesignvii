@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --color-default:  black;
+  --color-default: black;
+  /* --ali               alinhar componentes em linha                                             */
 }
 
 code {
