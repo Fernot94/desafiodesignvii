@@ -2,9 +2,11 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import Formulario from "./Formulario";
+import Candidatos from "./Candidatos";
 
 function App() {
   const [form, setForm] = useState(false);
+  const [cand, setCand] = useState(false);
 
   return (
     <div className="App">
@@ -12,8 +14,14 @@ function App() {
         <button className="candidaturas" onClick={() => setForm(!form)}>
           Adicionar Candidato
         </button>
+        <button className="candidates" onClick={() => setCand(!cand)}>
+          Candidatos
+        </button>
       </div>
-      <div className="body">{form == false ? "" : <Formulario />}</div>
+      <div className="body">
+        {form == false ? "" : <Formulario />}
+        {cand == false ? "" : <Candidatos />}
+      </div>
     </div>
   );
 }

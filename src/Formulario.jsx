@@ -10,6 +10,7 @@ export default function Formulario() {
   const [success, setSuccess] = useState(false);
   return (
     <div>
+      <h1>Adicionar Candidato</h1>
       <form>
         <label>
           Nome:
@@ -65,7 +66,7 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <button onClick={() => setSuccess(true)}>Adicionar</button>
+        <button onClick={() => setSuccess(!success)}>Adicionar</button>
         {success == false ? "" : <h2>Candidato adicionado com sucesso!</h2>}
       </form>
     </div>
