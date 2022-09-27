@@ -1,0 +1,6 @@
+.alinhado {
+    display: flex;
+    flex-direction: row;
+}
+
+.TurmaBootCamp {}
