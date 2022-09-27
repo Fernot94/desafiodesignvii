@@ -30,6 +30,9 @@ export default function ListaPerfis() {
                     . cada turma tem a capacidade máxima de 30 alunos, mas não é obrigatório estar cheia
                         ! tem de se contar quantos alunos tem a turma com a ajuda de um CONTADOR
                     . existe um limite de 3 turmas
+                    . são mostradas 5 pessoas por vez, quando se quiser ver outro perfis:
+                        ! carrega-se no botão e são mostrados novos perfis
+                            #NOTA - podem ser mostrados menos de 5 perfis dependendo da quantidade de alunos numa turma
             */}
 
             {/* div do primeiro power up */}
