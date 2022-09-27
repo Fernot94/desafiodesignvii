@@ -3,9 +3,16 @@ import { useState } from "react";
 export default function Powerups() {
   return (
     <div>
-      <p>Power Up 1</p>
-      <p>Power Up 2</p>
-      <p>Power Up 3</p>
+      <h1>Power Up's</h1>
+      <div>
+        <h2>Power Up 1</h2>
+      </div>
+      <div>
+        <h2>Power Up 2</h2>
+      </div>
+      <div>
+        <h2>Power Up 3</h2>
+      </div>
     </div>
   );
 }
