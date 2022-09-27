@@ -13,7 +13,7 @@ export default function Formulario() {
       <h1>Adicionar Candidato</h1>
       <h2>Fotografia</h2>
       <form>
-        <label>
+        <label className="formCamp">
           Nome:
           <input
             onChange={(ele) => setNome(ele.target.value)}
@@ -22,7 +22,7 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <label>
+        <label className="formCamp">
           Data de Nascimento:
           <input
             onChange={(ele) => setIdade(ele.target.value)}
@@ -31,7 +31,7 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <label>
+        <label className="formCamp">
           Morada:
           <input
             onChange={(ele) => setMorada(ele.target.value)}
@@ -40,7 +40,7 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <label>
+        <label className="formCamp">
           Número de Telefone:
           <input
             onChange={(ele) => setTelefone(ele.target.value)}
@@ -49,7 +49,7 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <label>
+        <label className="formCamp">
           Email:
           <input
             onChange={(ele) => setEmail(ele.target.value)}
@@ -58,7 +58,7 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <label>
+        <label className="formCamp">
           Status:
           <select
             onChange={(ele) => setStatus(ele.target.value)}
