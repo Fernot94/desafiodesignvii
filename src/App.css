@@ -23,6 +23,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+}
+
+.candidaturas {
+  border-color: black;
+  background-color: rgb(33, 221, 162);
+}
+
+.candidates {
+  border-color: black;
+  background-color: rgb(33, 221, 162)
+}
+
+.powerups {
+  border-color: black;
+  background-color: rgb(33, 221, 162)
 }
 
 .App-link {
