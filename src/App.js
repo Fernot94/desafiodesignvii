@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div className="header">
         <button
-          className="candidaturas"
+          className="button"
           onClick={() => {
             setForm(!form);
             setCand(false);
@@ -25,7 +25,7 @@ function App() {
           Adicionar Candidato
         </button>
         <button
-          className="candidates"
+          className="button"
           onClick={() => {
             setCand(!cand);
             setForm(false);
@@ -35,7 +35,7 @@ function App() {
           Candidatos
         </button>
         <button
-          className="powerups"
+          className="button"
           onClick={() => {
             setPower(!power);
             setCand(false);

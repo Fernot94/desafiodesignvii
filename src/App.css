@@ -26,20 +26,12 @@
 
 }
 
-.candidaturas {
-  border-color: black;
-  background-color: rgb(33, 221, 162);
-}
-
-.candidates {
+.buttons {
   border-color: black;
   background-color: rgb(33, 221, 162)
 }
 
-.powerups {
-  border-color: black;
-  background-color: rgb(33, 221, 162)
-}
+
 
 .App-link {
   color: #61dafb;
