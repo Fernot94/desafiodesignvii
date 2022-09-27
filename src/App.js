@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import Formulario from "./Formulario";
 import Candidatos from "./Candidatos";
+import Editar from "./Editar";
 
 function App() {
   const [form, setForm] = useState(false);

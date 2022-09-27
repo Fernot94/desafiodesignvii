@@ -1,17 +1,15 @@
 import { useState } from "react";
 
-export default function Formulario() {
-  const [nome, setNome] = useState("");
-  const [idade, setIdade] = useState("");
-  const [morada, setMorada] = useState("");
-  const [telefone, setTelefone] = useState("");
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("");
+export default function Editar() {
+  const [nome, setNome] = useState("Daniel Pina");
+  const [idade, setIdade] = useState("05/12/1997");
+  const [morada, setMorada] = useState("Rua de Cima");
+  const [telefone, setTelefone] = useState("912345678");
+  const [email, setEmail] = useState("pina@gmail.com");
+  const [status, setStatus] = useState("Candidato");
   const [success, setSuccess] = useState(false);
   return (
     <div>
-      <h1>Adicionar Candidato</h1>
-      <h2>Fotografia</h2>
       <form>
         <label>
           Nome:
@@ -67,8 +65,9 @@ export default function Formulario() {
           />
         </label>
         <br />
-        <button onClick={() => setSuccess(!success)}>Adicionar</button>
-        {success == false ? "" : <h2>Candidato adicionado com sucesso!</h2>}
+        <button onClick={() => setSuccess(!success)}>Salvar</button>
+        <button onClick={() => setSuccess(!success)}>Cancelar</button>
+        {success == false ? "" : <h2>Candidato editado com sucesso!</h2>}
       </form>
     </div>
   );
